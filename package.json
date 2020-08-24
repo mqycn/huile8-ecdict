@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mqycn/huile8-ecdict#readme",
   "dependencies": {
+    "ora": "^5.0.0",
     "sqlite3": "^5.0.0"
   }
 }
