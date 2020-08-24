@@ -1,0 +1,22 @@
+{
+  "name": "huile8-ecdict",
+  "version": "1.0.0",
+  "description": "会了吧ECDICT词库插件(https://github.com/mqycn/huile8)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mqycn/huile8-ecdict.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mqycn/huile8-ecdict/issues"
+  },
+  "homepage": "https://github.com/mqycn/huile8-ecdict#readme",
+  "dependencies": {
+    "sqlite3": "^5.0.0"
+  }
+}
