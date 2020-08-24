@@ -4,13 +4,13 @@
   "description": "会了吧ECDICT词库插件(https://github.com/mqycn/huile8)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mqycn/huile8-ecdict.git"
   },
-  "author": "",
+  "author": "mqycn",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mqycn/huile8-ecdict/issues"
