@@ -14,14 +14,23 @@ keys.forEach(w1 => {
                 const data = {};
                 if (rows.length > 0) {
                     rows.forEach(row => {
-                        const item = {
-                            w: row.word,
-                            t: row.translation
+                        const item = {}
+                        if (row.word.toLowerCase() == row.word) {
+                            // 大小写不一致
+                            item.w = row.word;
                         }
                         if (row.phonetic) {
-                            item.p = row.phonetic
+                            // 存在音标
+                            item.p = row.phonetic;
                         }
-                        data[row.word.toLowerCase()] = item;
+                        if (Object.keys(item).length == 0) {
+                            // 如果 不存在音标且单词不存在大小写，直接存字符串
+                            data[row.word.toLowerCase()] = row.translation;
+                        } else {
+                            // 存在音标或单词存在大小写，增加单词解释
+                            item.t = row.translation;
+                            data[row.word.toLowerCase()] = item;
+                        }
                     });
                 }
                 fs.writeFileSync(
