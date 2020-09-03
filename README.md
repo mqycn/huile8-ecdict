@@ -1,5 +1,5 @@
 # huile8-ecdict
-huile8 的离线词库（https://github.com/mqycn/huile8）
+huile8 的离线词库（ https://github.com/mqycn/huile8 ）
 
 ## 使用方法
 
